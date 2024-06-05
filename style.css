@@ -1,0 +1,115 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+#container{
+box-shadow: #ff96ad;
+    border: 2px solid rgb(171, 153, 153);
+    width: 450px;
+    height: 500px;
+    padding: 20px;;
+    border:2px solid;
+    position: absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50% ,-50%);
+    padding:10px;
+ border-radius: 10px;
+ text-align: center;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 250;
+    
+}
+.text{
+    border: solid 1px;
+    border-radius: 10px;
+    width:300px;
+    height: auto;
+    padding: 10px;
+   
+   
+}
+
+button{
+    border-radius: 10px;
+    border:none;
+    transition: all;
+    width: 75px;
+    padding: 10px;
+    
+
+}
+button:hover{
+    background: #ff96ad;
+    box-shadow: 0 0 5px #ff96ad ,0 0 25px
+    #ff96ad, 0 0 50px #ff96ad,0 0 200px #ff96ad;
+}
+ul li {
+    text-align:left;
+    position: relative;
+    padding-left: 50px; /* Adjust to ensure text doesn't overlap with the icon */
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    list-style: none;
+}
+
+ul li::before {
+
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-image: url('circle.svg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    top: 50%;
+   left:20px;
+    transform: translateY(-50%);
+}
+ul li.box{
+
+    color:#555;
+    text-decoration: line-through;
+}
+ul li.box::before{
+    
+    background-image: url('check-circle.svg');
+
+
+}
+ul li span{
+    position: absolute;
+    right:0;
+    top:5px;
+    width:20px;
+    height:20px;
+    font-size: 20px;
+    color: black;
+    line-height: 20px;
+    text-align: center;
+     border-radius: 50%;
+}
+ul li span:hover{
+    background: #ff96ad;
+   
+}
+
+
+
+
+
+
+
